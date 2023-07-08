@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+#banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+#female-character {
+  position: absolute;
+  top: calc(10% - 200px);
+  left: 15%;
+  opacity: 0;
+  animation: fade-in-out 6s 2s forwards;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#subheadline {
+  font-size: 35px;
+  color: white;
+  position: absolute;
+  top: calc(70% + 50px);
+  left: -400px;
+  opacity: 0;
+  animation: slide-in-subheadline 1s 2s forwards,
+    pop-out-subheadline 1s 5s forwards;
+}
+
+@keyframes slide-in-subheadline {
+  0% {
+    left: -400px;
+    opacity: 0;
+  }
+  100% {
+    left: 10%;
+    opacity: 1;
+  }
+}
+
+@keyframes pop-out-subheadline {
+  0% {
+    left: 10%;
+    opacity: 1;
+  }
+  100% {
+    left: -400px;
+    opacity: 0;
+  }
+}
+
+#headline1 {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  top: 50px;
+  margin-left: 50px; /* Adjust the margin-left value as needed */
+  opacity: 0;
+  animation: slide-in-left 1s 6s forwards;
+}
+
+@keyframes slide-in-left {
+  0% {
+    left: -400px;
+    opacity: 0;
+  }
+  100% {
+    left: 10px;
+    opacity: 1;
+  }
+}
+
+#headline2 {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  top: 300px;
+  margin-right: 50px;
+  opacity: 0;
+  animation: slide-in-right 1s 6s forwards;
+}
+
+@keyframes slide-in-right {
+  0% {
+    right: -400px;
+    opacity: 0;
+  }
+  100% {
+    right: 10px;
+    opacity: 1;
+  }
+}
+
+#learn-more-btn {
+  position: absolute;
+  background-image: url("/images/learnmore-removebg-preview.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: pop-in 1s 7.5s forwards;
+}
+
+#replay-btn {
+  position: absolute;
+  background-image: url("/images/replay-removebg-preview.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: pop-in 1s 7.5s forwards;
+}
+
+#replay-btn:hover {
+  cursor: pointer;
+}
