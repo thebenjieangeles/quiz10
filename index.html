@@ -3,38 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Quiz10</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="banner">
-      <img id="background-image" src="/images/background.png" />
-      <img id="female-character" src="/images/female.png" />
-      <div id="headline1">
-        <h2>
-          Joining KodeGo <br />is easy.<br />
-          Here's how:
-        </h2>
-      </div>
-      <div id="headline2">
-        <h3>
-          1. Apply Through Our Website <br />
-          2. Join Our BootCcamp <br />
-          3. Get Employed <br />
-          4. Pay Only when Hired
-        </h3>
-      </div>
-      <div id="subheadline">
-        <h1>
-          We don't just teach code, <br />we produce top <span>talent</span>.
-        </h1>
-      </div>
-      <button id="learn-more-btn" src="/images/learnmore-removebg-preview.png">
-        Learn More
-      </button>
-      <div id="logo"></div>
-      <button id="replay-btn">Replay</button>
-    </div>
     <script src="script.js"></script>
+  </head>
+  <body id="banner">
+    <div>
+      <a href="index.html">
+        <img
+          id="replay"
+          class="card popout-image"
+          src="/images/replay.png"
+          alt="replay"
+        />
+      </a>
+    </div>
+
+    <div>
+      <img id="logo" class="popout-image" src="/images/logo.png" alt="logo" />
+    </div>
+
+    <div>
+      <img
+        id="femaleImage"
+        class="popout-image"
+        src="/images/female.png"
+        alt="Female Character"
+      />
+    </div>
+
+    <div>
+      <img
+        id="headline1"
+        class="headline"
+        src="/images/headline1.png"
+        alt="Headline 1"
+      />
+    </div>
+
+    <div>
+      <img
+        id="headline2"
+        class="headline"
+        src="/images/headline2.png"
+        alt="Headline 2"
+      />
+    </div>
+
+    <div>
+      <img
+        id="subheadline"
+        class="popout-image"
+        src="/images/subheadline.png"
+        alt="sub headline"
+      />
+    </div>
+
+    <div>
+      <img
+        id="LearnMorebtn"
+        class="popout-image"
+        src="/images/learnmore.png"
+        alt="LearnMorebtn"
+      />
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
